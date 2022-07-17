@@ -36,6 +36,8 @@ public class JobConfiguration {
                         System.out.printf("step1 was executed!!!");
                         System.out.printf("step1 was executed!!!");
                         System.out.printf("step1 was executed!!!");
+                        System.out.printf("step1 was executed!!!");
+                        System.out.printf("step1 was executed!!!");
                         return RepeatStatus.FINISHED;
                     }
                 })
