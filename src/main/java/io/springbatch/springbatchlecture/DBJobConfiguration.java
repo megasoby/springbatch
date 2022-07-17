@@ -50,9 +50,7 @@ public class DBJobConfiguration {
                     @Override
                     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
                         System.out.println("step2 waw executed2!");
-                        System.out.println("step2 waw executed2!");
-                        System.out.println("step2 waw executed2!");
-                        System.out.println("step2 waw executed2!");
+
                         return RepeatStatus.FINISHED;
                     }
                 })
