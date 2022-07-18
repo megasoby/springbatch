@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @RequiredArgsConstructor
-public class JobInstanceConfiguration {
+public class JobParameterConfiguration {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
@@ -33,6 +33,9 @@ public class JobInstanceConfiguration {
                 .tasklet(new Tasklet() {
                     @Override
                     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
+
+
+
                         System.out.printf("step1 was executed!!!");
                         return RepeatStatus.FINISHED;
                     }
