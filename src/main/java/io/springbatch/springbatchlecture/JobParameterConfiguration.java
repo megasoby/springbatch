@@ -46,7 +46,7 @@ public class JobParameterConfiguration {
                 .tasklet(new Tasklet() {
                     @Override
                     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
-                        System.out.printf("step3 was executed!!!");
+                        System.out.printf("step2 was executed!!!");
                         return RepeatStatus.FINISHED;
                     }
                 })
