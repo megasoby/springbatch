@@ -34,9 +34,6 @@ public class JobParameterConfiguration {
                     @Override
                     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
                         System.out.printf("step1 was executed!!!");
-                        System.out.printf("step1 was executed!!!");
-                        System.out.printf("step1 was executed!!!");
-                        System.out.printf("step1 was executed!!!");
                         return RepeatStatus.FINISHED;
                     }
                 })
