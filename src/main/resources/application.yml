@@ -1,7 +1,18 @@
 spring:
   profiles:
-    active: mysql
-
+    group:
+      development:
+        - local
+      dockerProd:
+        - docker_mysql
+      production:
+        - mysql
+logging:
+  level:
+    root: INFO
+    org.springframework.boot.autoconfigure.logging : INFO
+    org.hibernate: INFO
+    org.springframework.jdbc.core: INFO
 
 ---
 spring:
@@ -36,10 +47,21 @@ spring:
       names: ${job.name:NONE}
       enabled: true
 
+---
+spring:
+  config:
+    activate:
+      on-profile: docker_mysql
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://settle_mysql:3306/springbatch?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      names: ${job.name:NONE}
+      enabled: true
 
-logging:
-  level:
-    root: INFO
-    org.springframework.boot.autoconfigure.logging : INFO
-    org.hibernate: INFO
-    org.springframework.jdbc.core: INFO

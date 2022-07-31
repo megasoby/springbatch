@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SpringbatchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-    <option name="ACTIVE_PROFILES" />
+    <option name="ACTIVE_PROFILES" value="production" />
     <option name="DEBUG_MODE" value="true" />
     <module name="springbatchlecture" />
     <option name="PROGRAM_PARAMETERS" value="--job.name=batchJob1 name=5 date=20220725" />
