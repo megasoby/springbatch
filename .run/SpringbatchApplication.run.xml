@@ -3,7 +3,7 @@
     <option name="ACTIVE_PROFILES" value="production" />
     <option name="DEBUG_MODE" value="true" />
     <module name="springbatchlecture" />
-    <option name="PROGRAM_PARAMETERS" value="--job.name=apiJob requestDate=20210107" />
+    <option name="PROGRAM_PARAMETERS" value="20210102" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="io.springbatch.springbatchlecture.SpringBatchApplication" />
     <method v="2">
       <option name="Make" enabled="true" />
